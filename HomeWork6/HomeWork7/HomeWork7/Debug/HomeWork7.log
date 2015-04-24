@@ -1,0 +1,86 @@
+﻿Build started 13-11-2013 00:58:27.
+     1>Project "C:\Users\Pranav\Documents\Visual Studio 2012\Projects\HomeWork7\HomeWork7\HomeWork7.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 11.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt SimpleListTestDriver.cpp
+         SimpleListTestDriver.cpp
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\listnode.h(8): error C2953: 'ListNode' : class template has already been defined
+                 c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\listnode.h(5) : see declaration of 'ListNode'
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\nodesllist.h(74): warning C4812: obsolete declaration style: please use 'NodeSLList<T>::~NodeSLList' instead
+                 c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\nodesllist.h(556) : see reference to class template instantiation 'NodeSLList<T>' being compiled
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\nodesllist.h(90): error C2838: 'IsEmpty' : illegal qualified name in member declaration
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\nodesllist.h(521): error C2804: binary 'operator <<' has too many parameters
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\nodesllist.h(521): error C2333: 'NodeSLList<T>::operator <<' : error in function declaration; skipping function body
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\nodesllist.h(554): error C2535: 'ListNode &NodeSLList<T>::RetrieveNode(int) const' : member function already defined or declared
+                 c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\nodesllist.h(508) : see declaration of 'NodeSLList<T>::RetrieveNode'
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\nodesllist.h(74): warning C4812: obsolete declaration style: please use 'NodeSLList<T>::~NodeSLList' instead
+                 with
+                 [
+                     T=int
+                 ]
+                 c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(17) : see reference to class template instantiation 'NodeSLList<T>' being compiled
+                 with
+                 [
+                     T=int
+                 ]
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\nodesllist.h(521): error C2333: 'NodeSLList<T>::operator <<' : error in function declaration; skipping function body
+                 with
+                 [
+                     T=int
+                 ]
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\nodesllist.h(554): error C2535: 'ListNode &NodeSLList<T>::RetrieveNode(int) const' : member function already defined or declared
+                 with
+                 [
+                     T=int
+                 ]
+                 c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\nodesllist.h(508) : see declaration of 'NodeSLList<T>::RetrieveNode'
+                 with
+                 [
+                     T=int
+                 ]
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(25): error C2133: 'temp' : unknown size
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(25): error C2512: 'ListNode' : no appropriate default constructor available
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(27): error C2133: 'add_tail' : unknown size
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(27): error C2512: 'ListNode' : no appropriate default constructor available
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(30): error C2133: 'insert_node' : unknown size
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(30): error C2512: 'ListNode' : no appropriate default constructor available
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(33): error C2133: 'n1' : unknown size
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(33): error C2512: 'ListNode' : no appropriate default constructor available
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(35): error C2133: 'n2' : unknown size
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(35): error C2512: 'ListNode' : no appropriate default constructor available
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(37): error C2133: 'n3' : unknown size
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(37): error C2512: 'ListNode' : no appropriate default constructor available
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(39): error C2133: 'n4' : unknown size
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(39): error C2512: 'ListNode' : no appropriate default constructor available
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(41): error C2133: 'n5' : unknown size
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(41): error C2512: 'ListNode' : no appropriate default constructor available
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(47): warning C4552: '<<' : operator has no effect; expected operator with side-effect
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(49): warning C4552: '<<' : operator has no effect; expected operator with side-effect
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(51): warning C4552: '<<' : operator has no effect; expected operator with side-effect
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(53): warning C4552: '<<' : operator has no effect; expected operator with side-effect
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(55): warning C4552: '<<' : operator has no effect; expected operator with side-effect
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(89): error C2582: 'operator =' function is unavailable in 'ListNode'
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(90): warning C4552: '<<' : operator has no effect; expected operator with side-effect
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(114): error C2582: 'operator =' function is unavailable in 'ListNode'
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(115): warning C4552: '<<' : operator has no effect; expected operator with side-effect
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(120): warning C4552: '<<' : operator has no effect; expected operator with side-effect
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(121): warning C4552: '<<' : operator has no effect; expected operator with side-effect
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(132): error C2582: 'operator =' function is unavailable in 'ListNode'
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(135): error C2582: 'operator =' function is unavailable in 'ListNode'
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(136): warning C4552: '<<' : operator has no effect; expected operator with side-effect
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(153): error C2039: 'IsEmpty' : is not a member of 'NodeSLList<T>'
+                 with
+                 [
+                     T=int
+                 ]
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(171): error C2582: 'operator =' function is unavailable in 'ListNode'
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(176): error C2582: 'operator =' function is unavailable in 'ListNode'
+     1>c:\users\pranav\documents\visual studio 2012\projects\homework7\homework7\simplelisttestdriver.cpp(196): error C2039: 'IsEmpty' : is not a member of 'NodeSLList<T>'
+                 with
+                 [
+                     T=int
+                 ]
+     1>Done Building Project "C:\Users\Pranav\Documents\Visual Studio 2012\Projects\HomeWork7\HomeWork7\HomeWork7.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.21

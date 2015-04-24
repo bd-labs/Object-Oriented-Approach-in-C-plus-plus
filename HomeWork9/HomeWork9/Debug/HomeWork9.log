@@ -1,0 +1,20 @@
+﻿Build started 12/12 22:27:19.
+     1>Project "E:\Personal\Masters\OOP_C++\Homeworks\HomeWork9\HomeWork9\HomeWork9.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         E:\Visual_Studio\Developer\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt MyTriangle.cpp
+         MyTriangle.cpp
+     1>e:\personal\masters\oop_c++\homeworks\homework9\homework9\mytriangle.cpp(83): warning C4018: '>' : signed/unsigned mismatch
+     1>e:\personal\masters\oop_c++\homeworks\homework9\homework9\mytriangle.cpp(85): warning C4018: '>' : signed/unsigned mismatch
+       Link:
+         E:\Visual_Studio\Developer\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Personal\Masters\OOP_C++\Homeworks\HomeWork9\Debug\HomeWork9.exe" /INCREMENTAL /NOLOGO FilledShapes_lib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Personal\Masters\OOP_C++\Homeworks\HomeWork9\Debug\HomeWork9.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Personal\Masters\OOP_C++\Homeworks\HomeWork9\Debug\HomeWork9.lib" /MACHINE:X86 Debug\MyCircle.obj
+         Debug\MyRect.obj
+         Debug\MyTriangle.obj
+         Debug\screensaver_RT.obj
+         Debug\Shape.obj
+         FilledShapes_Lib.lib
+         HomeWork9.vcxproj -> E:\Personal\Masters\OOP_C++\Homeworks\HomeWork9\Debug\HomeWork9.exe
+     1>Done Building Project "E:\Personal\Masters\OOP_C++\Homeworks\HomeWork9\HomeWork9\HomeWork9.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.12

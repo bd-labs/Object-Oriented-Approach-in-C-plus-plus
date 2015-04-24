@@ -1,0 +1,90 @@
+///////////////////////////////////////////////////////////////////////////////
+// Bharath Darapu
+// CIS 554
+// MyCircle
+//
+// Description: Interface file for a simple circle class. This class will 
+//              clients to draw simple circles on the screen.
+//
+///////////////////////////////////////////////////////////////////////////////
+
+#ifndef __MY_CIRCLE__
+#define __MY_CIRCLE__
+
+// include appropriate prototypes
+#include "FilledShapes.h"
+#include "Shape.h"
+#include <windows.h>
+
+class MyCircle : public Shape {
+
+// Public Interace
+public:
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Function: Default Constructor
+// Purpose: Construct a circle.
+//
+// Inputs: None
+// Outputs: None
+// 
+// Returns: None
+///////////////////////////////////////////////////////////////////////////////
+MyCircle();
+
+///////////////////////////////////////////////////////////////////////////////
+// Function: Draw
+// Purpose: Draw the circle with the current attributes
+//
+// Inputs: None
+// Outputs: None
+// 
+// Returns: true if successful, false otherwise
+///////////////////////////////////////////////////////////////////////////////
+virtual bool Draw();
+
+///////////////////////////////////////////////////////////////////////////////
+// Function: SetLength
+// Purpose: Set the length of the circle (i.e. in the y direction)
+//
+// Inputs: int length - desired length of circle
+// Outputs: None
+// 
+// Returns: true if successful, false otherwise
+///////////////////////////////////////////////////////////////////////////////
+virtual bool SetLength(unsigned int length);
+
+
+///////////////////////////////////////////////////////////////////////////////
+// Function: GetLength
+// Purpose: Get the length of the circle (i.e. in the y direction)
+//
+// Inputs: None
+// Outputs: None
+// 
+// Returns: current length of circle
+///////////////////////////////////////////////////////////////////////////////
+unsigned int GetLength();
+
+///////////////////////////////////////////////////////////////////////////////
+// Function: SetPosition
+// Purpose: Set the position of the circle. This specifies an x,y coordinate
+//          of the upper left of the circle, inside the border.
+//
+// Inputs: POINT point - x,y coordinates 
+// Outputs: None
+// 
+// Returns: true if successful, false otherwise
+///////////////////////////////////////////////////////////////////////////////
+virtual bool SetPosition(POINT &point);
+
+// Private Stuff
+
+private:
+
+unsigned int circleRadius;
+
+}; // end class MyCirc declaration
+
+#endif __MY_CIRCLE__

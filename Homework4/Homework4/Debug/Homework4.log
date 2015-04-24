@@ -1,0 +1,14 @@
+﻿Build started 10/17 23:28:51.
+     1>Project "E:\Personal\Masters\OOP_C++\Homeworks\Homework4\Homework4\Homework4.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         E:\Visual_Studio\Developer\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc110.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         E:\Visual_Studio\Developer\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\Personal\Masters\OOP_C++\Homeworks\Homework4\Debug\Homework4.exe" /INCREMENTAL /NOLOGO ..\debug\Timestamp_Lib.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"E:\Personal\Masters\OOP_C++\Homeworks\Homework4\Debug\Homework4.pdb" /SUBSYSTEM:CONSOLE /STACK:"10000000" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\Personal\Masters\OOP_C++\Homeworks\Homework4\Debug\Homework4.lib" /MACHINE:X86 Debug\main.obj
+         Debug\SelectionSort.obj
+         Homework4.vcxproj -> E:\Personal\Masters\OOP_C++\Homeworks\Homework4\Debug\Homework4.exe
+     1>Done Building Project "E:\Personal\Masters\OOP_C++\Homeworks\Homework4\Homework4\Homework4.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.24

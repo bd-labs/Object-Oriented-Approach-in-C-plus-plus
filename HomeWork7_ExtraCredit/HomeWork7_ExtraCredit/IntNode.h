@@ -1,0 +1,165 @@
+///////////////////////////////////////////////////////////////////////
+// class IntNode
+//
+// Description: represents the data that we want to store in our 
+//              linked list
+///////////////////////////////////////////////////////////////////////
+#ifndef INT_NODE_H_
+#define INT_NODE_H_
+
+#include <iostream>
+
+using std::ostream;
+
+
+// class declaration
+template <typename N>
+class IntNode {
+
+// make the following friends of this class in order that they be
+// able to directly access private data of this container class
+
+
+    friend void NodeSLList_Test(void);
+    template <typename N> friend class NodeSLList<N>;
+    friend class TSArray;
+    friend ostream& operator<<(ostream &, NodeSLList<N> &);
+
+public:
+
+///////////////////////////////////////////////////////////////////////
+// ostream operator
+// 
+// Description: provide overloaded ostream operator
+// Input: reference to ostream object
+//        reference to IntNode object to output
+// Output: none
+// Returns: reference to same ostream operator for cascading
+///////////////////////////////////////////////////////////////////////
+    friend ostream& operator<<(ostream & out, IntNode<N> & n)
+    {
+        out << "[" << n.row << "]"
+            << "[" << n.col << "]"
+            << "[" << n.depth << "]:"
+            << n.data;
+        return out;
+    }
+
+
+///////////////////////////////////////////////////////////////////////
+// default constructor
+// 
+// Description: provide default construction of an IntNode object
+// Input: row of array
+//        column of array
+//        depth of array
+//        initial value of node
+//        pointer to next IntNode
+// Output: none
+// Returns: reference to same ostream operator for cascading
+///////////////////////////////////////////////////////////////////////
+    IntNode(int inRow=0, int inCol=0, int inDepth=0, N inData, IntNode<N> *in = 0)
+    {
+        data = inData; 
+        next = in;
+        row = inRow; 
+        col = inCol; 
+        depth = inDepth;
+    }
+
+///////////////////////////////////////////////////////////////////////
+// GetRow
+// 
+// Description: return row member
+// Input: none
+// Output: none
+// Returns: row member
+///////////////////////////////////////////////////////////////////////
+    const int GetRow() const
+    {
+        return row;
+    }
+
+///////////////////////////////////////////////////////////////////////
+// GetColumn
+// 
+// Description: return column member
+// Input: none
+// Output: none
+// Returns: column member
+///////////////////////////////////////////////////////////////////////
+    const int GetColumn() const
+    {
+        return col;
+    }
+
+
+///////////////////////////////////////////////////////////////////////
+// GetDepth
+// 
+// Description: return depth member
+// Input: none
+// Output: none
+// Returns: depth member
+///////////////////////////////////////////////////////////////////////
+    const int GetDepth() const
+    {
+        return depth;
+    }
+
+
+///////////////////////////////////////////////////////////////////////
+// GetData
+// 
+// Description: return data member
+// Input: none
+// Output: none
+// Returns: data member
+///////////////////////////////////////////////////////////////////////
+    const N GetData() const
+    {
+        return data;
+    }
+
+
+private:
+
+///////////////////////////////////////////////////////////////////////
+// row
+// 
+// this variable holds the row of the array element (i.e first demension)
+///////////////////////////////////////////////////////////////////////
+    int row;
+
+///////////////////////////////////////////////////////////////////////
+// column
+// 
+// this variable holds the column of the array element (i.e 2nd demension)
+///////////////////////////////////////////////////////////////////////
+    int col;
+
+///////////////////////////////////////////////////////////////////////
+// depth
+// 
+// this variable holds the column of the array element (i.e 3rd demension)
+///////////////////////////////////////////////////////////////////////
+    int depth;
+
+///////////////////////////////////////////////////////////////////////
+// data
+// 
+// this variable holds the actual data at the array element
+///////////////////////////////////////////////////////////////////////
+    N data;
+
+
+///////////////////////////////////////////////////////////////////////
+// column
+// 
+// this variable holds the column of the array element (i.e 2nd demension)
+///////////////////////////////////////////////////////////////////////
+    IntNode<N> *next;
+};
+
+
+#endif INT_NODE_H_
